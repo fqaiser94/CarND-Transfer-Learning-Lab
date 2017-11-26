@@ -62,3 +62,17 @@ def main(_):
 # parses flags and calls the `main` function above
 if __name__ == '__main__':
     tf.app.run()
+
+
+# run script from command line like so for vggnet
+# for CIFAR
+# python3 feature_extraction_solution.py --training_file vgg-100/vgg_cifar10_100_bottleneck_features_train.p --validation_file vgg-100/vgg_cifar10_bottleneck_features_validation.p
+# for german traffic signs
+# python3 feature_extraction_solution.py --training_file vgg-100/vgg_traffic_100_bottleneck_features_train.p --validation_file vgg-100/vgg_traffic_bottleneck_features_validation.p
+
+
+# run script from command line like so for inception
+# for CIFAR
+# python3 feature_extraction_solution.py --training_file inception-100/inception_cifar10_100_bottleneck_features_train.p --validation_file inception-100/inception_cifar10_bottleneck_features_validation.p
+# for german traffic signs
+# python3 feature_extraction_solution.py --training_file inception-100/inception_traffic_100_bottleneck_features_train.p --validation_file inception-100/inception_traffic_bottleneck_features_validation.p
